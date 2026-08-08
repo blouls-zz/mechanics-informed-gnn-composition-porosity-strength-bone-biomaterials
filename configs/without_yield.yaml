@@ -1,0 +1,4 @@
+experiment: without_yield
+base: main.yaml
+physics:
+  yield_weight: 0.0

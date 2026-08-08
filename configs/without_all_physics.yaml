@@ -1,0 +1,6 @@
+experiment: without_all_physics
+base: main.yaml
+physics:
+  gibson_ashby_weight: 0.0
+  hooke_weight: 0.0
+  yield_weight: 0.0

@@ -1,0 +1,4 @@
+experiment: without_gibson_ashby
+base: main.yaml
+physics:
+  gibson_ashby_weight: 0.0

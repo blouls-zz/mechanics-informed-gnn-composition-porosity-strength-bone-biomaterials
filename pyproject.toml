@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools==69.5.1", "wheel==0.43.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mechanics-informed-graph-networks"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+  "torch==2.2.2",
+  "torch-geometric==2.5.3",
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "scikit-learn==1.4.2",
+  "PyYAML==6.0.1"
+]
+
+[project.scripts]
+mignn-train = "mignn.commands.train:main"
+mignn-evaluate = "mignn.commands.evaluate:main"
+mignn-prepare = "mignn.commands.prepare:main"
+
+[tool.setuptools.packages.find]
+where = ["code"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true

@@ -1,0 +1,36 @@
+experiment: main
+seed: 42
+dataset: cerscaff_lit
+device: cuda
+precision: float32
+model:
+  node_features: 18
+  edge_features: 8
+  global_features: 10
+  hidden_dimension: 128
+  layers: 4
+  outputs: 3
+  dropout: 0.0
+physics:
+  gibson_ashby_weight: 0.1
+  hooke_weight: 0.05
+  yield_weight: 0.05
+  initial_weight: 10.0
+  coefficient_min: 0.1
+  coefficient_max: 1.0
+  exponent_min: 1.0
+  exponent_max: 3.0
+training:
+  pretrain_epochs: 50
+  joint_epochs: 200
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  restart_period: 50
+  early_stopping_patience: 30
+  gradient_clip: 0.0
+  workers: 4
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15

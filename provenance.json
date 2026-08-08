@@ -1,0 +1,13 @@
+{
+  "title": "Mechanics-informed graph neural networks reveal composition-porosity-strength relationships in bone biomaterials",
+  "domain": "porous bone biomaterial scaffold mechanical-property prediction",
+  "framework": "PyTorch 2.2 and PyTorch Geometric 2.5",
+  "venue": "Nature Portfolio submission format",
+  "supplement": "embedded in main document pages 28-41",
+  "datasets": ["CerScaff-Lit", "MetScaff-TPMS", "PolyComScaff"],
+  "compute": "one NVIDIA A100 40GB; D1 training 45 minutes",
+  "hyperparameters": "Methods pages 18-19 and Supplementary Table S4 page 33",
+  "learning_rate_resolution": "Supplementary Table S4 selected value 0.001 takes precedence over Methods prose 0.0005",
+  "dataset_release": "pending Zenodo deposition",
+  "human_subjects": false
+}

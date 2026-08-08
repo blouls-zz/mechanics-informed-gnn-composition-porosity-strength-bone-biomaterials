@@ -1,0 +1,3 @@
+No directly downloadable dataset artifact is available.
+CerScaff-Lit, MetScaff-TPMS, and PolyComScaff are described as pending Zenodo deposition at publication.
+No unverified or provisional dataset URL is included.

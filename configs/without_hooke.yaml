@@ -1,0 +1,4 @@
+experiment: without_hooke
+base: main.yaml
+physics:
+  hooke_weight: 0.0

@@ -1,0 +1,15 @@
+name: mignn
+channels:
+  - pytorch
+  - nvidia
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.10.14
+  - pytorch=2.2.2
+  - pytorch-cuda=12.1
+  - pyg=2.5.3
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scikit-learn=1.4.2
+  - pyyaml=6.0.1
